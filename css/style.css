@@ -32,6 +32,18 @@ p
 	line-height:100%;
 }
 
+a{
+	color: #2b2b2b;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	text-shadow: 0px 1.2px 1.5px rgba(0, 0, 0, 0.4);
+	font-size: 10px;
+	text-indent:50px;
+	word-spacing:3px;
+	letter-spacing:0px;
+	line-height:100%;
+}
+
 .theLine { 
     margin: 25px 0;
     height: 1px;
@@ -60,40 +72,30 @@ p
 	float:left;
 }
 
-#boxLeft{
+#buttonContainer
+{
 	width:200px;
-	height:200px;
-	padding:2px;
-	border:solid;
-	border-color:#cad0d2;
-	text-align: center;
-	line-height: 200px;
-	float:left;
-	margin:25px;
-	left:35%;
-	position:absolute;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10px;
 }
 
-#boxRight{
-	width:200px;
-	height:200px;
-	padding:2px;
-	border:solid;
-	border-color:#cad0d2;
-	text-align: center;
-	line-height: 200px;
-	float:right;
-	margin:25px;
-	left:15%;
-	position:relative
-}
-
-#gamesBox{
-	display:none;
-}
-
-#teamBox{
-	display:none;
+#signup
+{
+	width: 600px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	padding: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow:    0px 8px 5px -6px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 8px 5px -6px rgba(0, 0, 0, 0.4);
+	box-shadow:         0px 8px 5px -6px rgba(0, 0, 0, 0.4);
+	display: none;
 }
 
 footer
@@ -122,14 +124,62 @@ a:visited {text-decoration:none; color:#cad0d2;}
 a:hover {text-decoration:none; color:#b8e356;}
 a:active {text-decoration:none; color:#cad0d2;}
 
-#questionmark{
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	bottom: 80px;
-	right: 80px;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
-	text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-	font-size: 40px;
+.hideshow {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+	background:-moz-linear-gradient( center top, #b8e356 5%, #a5cc52 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52');
+	background-color:#b8e356;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 43px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #86ae47;
+}.hideshow:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
+	background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
+	background-color:#a5cc52;
+}.hideshow:active {
+	position:relative;
+	top:1px;
+}
+
+.hideshowRED {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fc8d83), color-stop(1, #e4685d) );
+	background:-moz-linear-gradient( center top, #fc8d83 5%, #e4685d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc8d83', endColorstr='#e4685d');
+	background-color:#fc8d83;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 43px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
+}.hideshowRED:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e4685d), color-stop(1, #fc8d83) );
+	background:-moz-linear-gradient( center top, #e4685d 5%, #fc8d83 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4685d', endColorstr='#fc8d83');
+	background-color:#e4685d;
+}.hideshowRED:active {
+	position:relative;
+	top:1px;
 }
